@@ -18,8 +18,8 @@ test1
 CSVFileReader csvFile;
 
 if (!csvFile.open("test.csv")) {
-	// handle error
-	return 1;
+	// handle error here
+	return;
 }
 
 std::string tes1;
