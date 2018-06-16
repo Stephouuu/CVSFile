@@ -12,7 +12,7 @@ Assuming we are using the following .csv file :
 test1
 46,3.1415
 ```
-
+Let's read these data in C++.
 ```c++
 
 CSVFileReader csvFile;
@@ -36,3 +36,7 @@ The output will be :
 ```
 test1 46 3.1415
 ```
+
+### Write a CVS file
+
+comming soon ...
