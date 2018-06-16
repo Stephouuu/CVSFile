@@ -1,18 +1,18 @@
 # CVSFile
 
-Light CVS file format handler wrote in c++.
+Light CVS file format handler wrote in C++.
 
 ## How to use it
 
 ### Read a CVS file
 
-Assuming we are using the following .csv file :
+Assuming we are using the following .csv file ...
 
 ```csv
 test1
 46,3.1415
 ```
-Let's read these data in C++.
+... Let's read these data in C++ ...
 ```c++
 
 CSVFileReader csvFile;
