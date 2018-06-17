@@ -1,6 +1,6 @@
 # CVSFile
 
-Light CVS file format handler for C++ applications.
+A light CVS file format handler for C++ applications.
 
 ## How to use it
 
