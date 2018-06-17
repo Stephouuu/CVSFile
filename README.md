@@ -44,16 +44,16 @@ test1 46 3.1415
 #include "CSVFileWriter.hpp"
 // ...
 CSVFileWriter csvFile;
-	// Pass 'true' in the second argument to open() if you want to override the file.
-	// If you want to app to the end of the file, omit this argument (default value is false).
-	if (!csvFile.open("test.csv", true)) { 
-		// handle error here
-		return ;
-	}
-	csvFile << "tes1" << CSVFileWriter::endl
-		<< "tes2" << "test3" << CSVFileWriter::endl
-		<< 1 << 2 << 3 << CSVFileWriter::endl
-		<< 3.1415f << 2.001f;
+// Pass 'true' in the second argument to open() if you want to override the file.
+// If you want to app to the end of the file, omit this argument (default value is false).
+if (!csvFile.open("test.csv", true)) { 
+	// handle error here
+	return ;
+}
+csvFile << "tes1" << CSVFileWriter::endl
+	<< "tes2" << "test3" << CSVFileWriter::endl
+	<< 1 << 2 << 3 << CSVFileWriter::endl
+	<< 3.1415f << 2.001f;
 ```
 The csv file 'test.csv' now contains
 ```csv
