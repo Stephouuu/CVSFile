@@ -60,7 +60,7 @@ The csv file 'test.csv' now contains
 tes1
 tes2,tes3
 1,2,3
-3.1415, 2.001
+3.1415,2.001
 ```
 
 
