@@ -27,8 +27,8 @@ std::string test1;
 int n1;
 float f1;
 
-csvFile >> test1 >> test2;
-csvFile >> tes3;
+csvFile >> test1 >> n1;
+csvFile >> f1;
 
 std::clog << test1 << " " << n1 << " " << f1 << std::endl;
 ```
