@@ -33,7 +33,7 @@ csvFile >> f1;
 std::clog << test1 << " " << n1 << " " << f1 << std::endl;
 ```
 
-The output will be :
+The program's output will be :
 ```
 test1 46 3.1415
 ```
