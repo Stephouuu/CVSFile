@@ -1,4 +1,4 @@
-# CVSFile
+# OpenLightCSV
 
 A light CVS file format handler for C++ applications.
 
