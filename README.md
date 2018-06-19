@@ -12,25 +12,29 @@ Assuming we are using the following .csv file
 test1
 46,3.1415
 ```
-... Now, let's read these data with our CSVFileReader class :
+Let's read the .csv file with our CSVFileReader class :
 ```c++
 #include "CSVFileReader.hpp"
-// ...
-CSVFileReader csvFile;
 
-if (!csvFile.open("test.csv")) {
-	// handle error here
-	return;
+int main(void)
+{
+	CSVFileReader csvFile;
+
+	if (!csvFile.open("test.csv")) {
+		// handle error here
+		return;
+	}
+
+	std::string test1;
+	int n1;
+	float f1;
+
+	csvFile >> test1 >> n1;
+	csvFile >> f1;
+
+	std::clog << test1 << " " << n1 << " " << f1 << std::endl;
+	return 0;
 }
-
-std::string test1;
-int n1;
-float f1;
-
-csvFile >> test1 >> n1;
-csvFile >> f1;
-
-std::clog << test1 << " " << n1 << " " << f1 << std::endl;
 ```
 
 The program's output will be :
@@ -42,18 +46,22 @@ test1 46 3.1415
 
 ```c++
 #include "CSVFileWriter.hpp"
-// ...
-CSVFileWriter csvFile;
-// Pass 'true' in the second argument to open() if you want to override the file.
-// If you want to app to the end of the file, omit this argument (default value is false).
-if (!csvFile.open("test.csv", true)) { 
-	// handle error here
-	return ;
+
+int main(void)
+{
+	CSVFileWriter csvFile;
+	// Pass 'true' in the second argument to open() if you want to override the file.
+	// If you want to app to the end of the file, omit this argument (default value is false).
+	if (!csvFile.open("test.csv", true)) { 
+		// handle error here
+		return ;
+	}
+	csvFile << "tes1" << CSVFileWriter::endl
+		<< "tes2" << "test3" << CSVFileWriter::endl
+		<< 1 << 2 << 3 << CSVFileWriter::endl
+		<< 3.1415f << 2.001f;
+	return 0;
 }
-csvFile << "tes1" << CSVFileWriter::endl
-	<< "tes2" << "test3" << CSVFileWriter::endl
-	<< 1 << 2 << 3 << CSVFileWriter::endl
-	<< 3.1415f << 2.001f;
 ```
 The csv file 'test.csv' now contains
 ```csv
