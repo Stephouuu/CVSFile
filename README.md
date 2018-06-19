@@ -1,6 +1,6 @@
 # OpenLightCSV
 
-A light CSV file format handler for C++ applications.
+A light easy-to-use CSV file format handler for C++ applications.
 
 ## How to use it
 
