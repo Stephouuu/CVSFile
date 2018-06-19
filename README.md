@@ -6,13 +6,13 @@ A light CSV file format handler for C++ applications.
 
 ### Read a CSV file
 
-Assuming we are using the following .csv file
+Assuming we are using the following .csv file :
 
 ```csv
 test1
 46,3.1415
 ```
-Let's read the .csv file with our CSVFileReader class :
+Let's read this file with our CSVFileReader class :
 ```c++
 #include "CSVFileReader.hpp"
 
