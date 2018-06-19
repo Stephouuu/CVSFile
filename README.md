@@ -15,6 +15,7 @@ test1
 Let's read this file with our CSVFileReader class :
 ```c++
 #include <iostream>
+#include <string>
 #include "CSVFileReader.hpp"
 
 int main(void)
@@ -47,6 +48,7 @@ test1 46 3.1415
 
 ```c++
 #include <iostream>
+#include <string>
 #include "CSVFileWriter.hpp"
 
 int main(void)
