@@ -4,7 +4,7 @@ A light easy-to-use CSV file format handler for C++ applications.
 
 ## Installation
 
-Just copy/paste the class's in your project.
+Just copy/paste the class' in your project.
 
 ## How to use it
 
